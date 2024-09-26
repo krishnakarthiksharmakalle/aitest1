@@ -1,6 +1,8 @@
 Here is the project with   
 • Approach and reasoning
+
 • Correctness and efficiency of the code.
+
 • Quality of data preprocessing and feature engineering.
 • Insightfulness of the exploratory data analysis.
 • Performance and evaluation of the models.
