@@ -1,0 +1,41 @@
+
+In this project, two machine learning models were used to predict user churn:
+
+Logistic Regression:
+
+A linear model for binary classification that predicts whether a user will churn or not.
+Logistic regression works well for binary classification problems where the relationship between the features and the target variable can be approximated linearly.
+Random Forest:
+
+A tree-based ensemble model that builds multiple decision trees during training and merges their outputs for more accurate and stable predictions.
+Random Forest is highly effective for complex data patterns and handles non-linear relationships well.
+Explanation of Model Training:
+Both models were trained using the features provided in the dataset, with the target being the churn column. After training, their performance was compared using metrics like accuracy, precision, recall, and F1 score. The best-performing model (in terms of F1 score) was saved for future use.
+
+Saving the Trained Model
+The Random Forest model, which typically performs better on complex, non-linear data, would be saved as the best-performing model.
+
+Here’s how the trained model was saved in the models/ directory:
+
+
+import pickle
+
+# Assuming Random Forest performed better in this case
+best_model = rf_model  # Random Forest model
+
+# Save the trained model
+with open('src/models/best_model.pkl', 'wb') as f:
+    pickle.dump(best_model, f)
+
+print("Best Model saved!")
+
+
+This will create a file called best_model.pkl inside the src/models/ folder, containing the trained Random Forest model. The model can be loaded for future use like this:
+
+
+# Loading the saved model
+with open('src/models/best_model.pkl', 'rb') as f:
+    loaded_model = pickle.load(f)
+
+
+This saved model can be used for making predictions on new user data or further analysis.
