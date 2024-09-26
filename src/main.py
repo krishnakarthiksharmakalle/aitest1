@@ -3,7 +3,7 @@ from src.functions2 import train_logistic_regression, train_random_forest, evalu
 
 # Load and clean data
 data_filepath = 'data/game_user_churn.csv'
-df = load_and_clean_data(data_filepath)
+df = load_and_clean_data('data/game_user_churn.csv')
 
 # Split data
 X_train, X_test, y_train, y_test = split_data(df)
