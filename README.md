@@ -42,7 +42,7 @@ Here’s a brief overview that you can add to your README in a **step-by-step** 
 ### 6. **Model Evaluation**  
    Both models were evaluated using accuracy, precision, recall, and F1 score to compare their performance. The Random Forest model performed better overall, capturing the complex relationships between the features and the churn outcome.
 
- 7. **Feature Importance**  
+ ###7. **Feature Importance**  
    The most important features contributing to the Random Forest model's predictions were identified and visualized. These insights reveal the factors most strongly influencing user churn, such as `total_play_time` and `games_played`.
 
 
